@@ -4,6 +4,7 @@ Write-Host "Checking files and directories existence:"
 if (!(Test-Path $FilePath -PathType Leaf)) { Write-Host "   - ${FilePath} Doesn't Exists, Creating!"} else { Write-Host "   - ${FilePath} Exists!"}
 
 $Payload=@'
+
 function batteryreports { $datenow = Get-date -Format "dddd_dd-MM-yyyy_HH-mm"; powercfg /batteryreport /output "C:\batteryreports\${datenow}.html" }
 New-Alias battery-report batteryreports
 '@
