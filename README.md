@@ -13,7 +13,7 @@ PowerShell script creates an Alias command ```battery-report``` to generate and 
 powercfg /batteryreport /output <file>.html
 ```
 
-# Installation
+# Setup
 
 #### Unblock, Set execution policy and run setup.ps1:
 
@@ -24,14 +24,14 @@ powercfg /batteryreport /output <file>.html
   # Unblock and set execution policy bypass
   Unblock-File -Path .\setup.ps1; PowerShell -ExecutionPolicy Bypass -File ".\setup.ps1"
   # Run File
-  .\setup.py
+  .\setup.ps1
 ```
 
-#### Sample Output:
+#### Sample Usage:
 
-```powershell
-  
-```
+![sample-usage](https://user-images.githubusercontent.com/83476929/204869627-dd465efb-2f7f-4dfa-9b1b-ada66c02efa2.png)
+
+- **Restart** PowerShell and then execute ```battery-report```
 
 # Contact
 
