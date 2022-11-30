@@ -4,33 +4,31 @@
 
 PowerShell script creates an Alias command ```battery-report``` to generate and manage battery reports based on [powercfg](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options) tool.
 
-# Installation
+### Description
 
-#### To unblock the script and set execution policy:
+- Script makes use of **Microsoft.PowerShell_profile.ps1** file to make an executable command for PowerShell terminal to generate and manage battery report based of powercfg command-line tool:
+- Manual Command:
 
 ```powershell
-  cd PSBatteryInfo
-  Unblock-File -Path .\setup.ps1
-  PowerShell -ExecutionPolicy Bypass -File ".\setup.ps1"
+powercfg /batteryreport /output <file>.html
 ```
 
-#### On windows PowerShell:
+# Installation
+
+#### Unblock, Set execution policy and run setup.ps1:
 
 ```powershell
   git clone https://github.com/umer-r/PSBatteryInfo.git
   cd PSBatteryInfo
+  Unblock-File -Path .\setup.ps1; PowerShell -ExecutionPolicy Bypass -File ".\setup.ps1"
   .\setup.py
 ```
 
+#### Sample Output:
 
-# Usage
-### On Windows:
-
-![Syntax](https://user-images.githubusercontent.com/83476929/203141926-5507ddab-c5ee-4090-9d2a-b1033dd8181e.png)
-
-### Examples:
-
-![Example](https://user-images.githubusercontent.com/83476929/203342161-c6136220-5fe0-4738-af01-2b1b15a37258.png)
+```powershell
+  
+```
 
 # Contact
 
