@@ -2,7 +2,7 @@
 
 ## PSBatteryInfo
 
-PowerShell script creates an Alias command ```battery-report``` to generate and manage battery reports based on ![powercfg](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options) tool.
+PowerShell script creates an Alias command ```battery-report``` to generate and manage battery reports based on [powercfg](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options) tool.
 
 # Installation
 
