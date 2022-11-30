@@ -18,9 +18,12 @@ powercfg /batteryreport /output <file>.html
 #### Unblock, Set execution policy and run setup.ps1:
 
 ```powershell
+  # Download project
   git clone https://github.com/umer-r/PSBatteryInfo.git
   cd PSBatteryInfo
+  # Unblock and set execution policy bypass
   Unblock-File -Path .\setup.ps1; PowerShell -ExecutionPolicy Bypass -File ".\setup.ps1"
+  # Run File
   .\setup.py
 ```
 
